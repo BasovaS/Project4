@@ -12,8 +12,8 @@
     </header>
     <main>
         <!--Создаем форму для параметров грузового отсека-->
-        <form>
-            <h3>Введите габариты грузового отсека</h3>
+        <form class="g_form" action="" method="post" name="g_form">
+            <fieldset><legend>Введите габариты грузового отсека</legend>
             <label for="g_lenght">Длина</label>
             <input name="number" name="g_lenght">
 
@@ -23,7 +23,9 @@
             <br><label for="g_height">Высота</label>
             <input name="number" name="g_height">
 
-            <br><input type="button" name="create_g" value="Cоздать">
+           <br><input type="button" class="g_create" name="g_create" value="Cоздать">
+        </fieldset>
+        
         </form>
     </main>
 </body>
