@@ -14,15 +14,26 @@
         <!--Создаем форму для параметров грузового отсека-->
         <form class="g_form" action="" method="post" name="g_form">
             <fieldset><legend>Введите габариты грузового отсека</legend>
-            <label for="g_lenght">Длина</label>
-            <input type="number" class="g_param" name="g_lenght">
+            
+            <table>
+                <tr>
+                    <td>
+                    <label for="g_lenght">Длина</label>
+                    <input type="number" class="g_param" name="g_lenght">
 
-            <br><label for="g_width">Ширина</label>
-            <input type="number" class="g_param" name="g_width">
+                    <br><label for="g_width">Ширина</label>
+                    <input type="number" class="g_param" name="g_width">
 
-            <br><label for="g_height">Высота</label>
-            <input type="number" class="g_param" name="g_height">
-
+                    <br><label for="g_height">Высота</label>
+                    <input type="number" class="g_param" name="g_height">
+                </td>
+                <td>
+                    <input type="button" class="standart" value="1000*200">
+                    <br><input type="button" class="standart" value="100*200">
+                    <br><input type="button" class="standart" value="1000*200">
+                </td> 
+                </tr>
+            </table>
            <br><input type="button" class="g_create" name="g_create" value="Cоздать">
         </fieldset>
         

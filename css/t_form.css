@@ -47,24 +47,24 @@
 
   .g_form fieldset{
     border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	margin: 0px 0px 10px 0px;
-	border: 1px solid #599269;
-	padding: 20px;
-	background: #7f958d;
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  margin: 0px 0px 10px 0px;
+	  border: 1px solid #599269;
+	  padding: 20px;
+	  background: #7f958d;
  }
 
   .g_form fieldset legend{
     color: #ffffff;
-	border-top: 1px solid #ffffff;
-	border-left: 1px solid #ffffff;
-	border-right: 1px solid #ffffff;
+	  border-top: 1px solid #ffffff;
+	  border-left: 1px solid #ffffff;
+	  border-right: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
-	border-radius: 5px 5px 5px 5px;
-	-webkit-border-radius: 5px 5px 5px 5px;
-	-moz-border-radius: 5px 5px 5px 5px;
-	background:#7f958d;
+	  border-radius: 5px 5px 5px 5px;
+	  -webkit-border-radius: 5px 5px 5px 5px;
+	  -moz-border-radius: 5px 5px 5px 5px;
+	  background:#7f958d;
   }
 
   .g_param{
@@ -78,7 +78,21 @@
     display: none;
   }
 
-  .g_form [type="button"]{
-    background-color: #256a50;
+  .g_form [class="g_create"]{
+    background-color: #e1e1e1;
     width: max-content;
+    -webkit-border-radius: 5px 5px 5px 5px;
+	  -moz-border-radius: 5px 5px 5px 5px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .g_form [class="standart"]{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+    width: max-content;
+    -webkit-border-radius: 5px 5px 5px 5px;
+	  -moz-border-radius: 5px 5px 5px 5px;  
   }
