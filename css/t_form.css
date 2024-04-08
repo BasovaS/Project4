@@ -67,11 +67,15 @@
 	background:#7f958d;
   }
 
-  .g_form input{
+  .g_param{
     width: 40px;
     margin: 10px;
     -webkit-border-radius: 7px 7px 7px 7px;
-	-moz-border-radius: 7px 7px 7px 7px;
+	  -moz-border-radius: 7px 7px 7px 7px; 
+    -moz-appearance: textfield;
+  }
+  .g_param::-webkit-inner-spin-button{
+    display: none;
   }
 
   .g_form [type="button"]{
