@@ -16,3 +16,10 @@ function Func3(){
     document.getElementById("g_height").setAttribute('value', 10);
 }
 
+function CreateIm(id){
+    elem = document.getElementById(id); //находим блок div по его id, который передали в функцию
+    state = elem.style.display; //смотрим, включен ли сейчас элемент
+    if (state =='') elem.style.display='none'; //если включен, то выключаем
+    else elem.style.display=''; //иначе - включаем
+}
+
