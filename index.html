@@ -13,17 +13,17 @@
     </header>
     <main>
         <!--Создаем форму для параметров грузового отсека-->
-        <form class="g_form" name="g_form">
+        <form class="g_form" name="g_form" id="g_form" action="/t_form.js" method="post">
             <fieldset><legend>Введите габариты грузового отсека</legend>
             
             <table>
                 <tr>
                     <td>
                     <label for="g_lenght">Длина</label>
-                    <input type="number" class="g_param" id="g_lenght" value="">
+                    <input type="number" class="g_param" id="g_lenght" name="g_lenght">
 
                     <br><label for="g_width">Ширина</label>
-                    <input type="number" class="g_param" id="g_width">
+                    <input type="number" class="g_param" id="g_width" name="g_width">
 
                     <br><label for="g_height">Высота</label>
                     <input type="number" class="g_param" id="g_height">
@@ -35,10 +35,10 @@
                 </td> 
                 </tr>
             </table>
-           <br><input type="button" class="g_create" value="Cоздать" onclick="CreateIm('block')">
+           <br><button type="submit" id="g_create" class="g_create" onclick="CreateIm('block')">Создать</button>
         </fieldset>
         </form>
-        <div class="block" id="block" style="display: none">
+        <div class="block" id="block" style="display: none; width: auto; height: auto;">
         
         </div>
     </main>

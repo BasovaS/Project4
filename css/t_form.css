@@ -80,7 +80,6 @@
 
   .g_form [class="g_create"]{
     background-color: #e1e1e1;
-    width: max-content;
     -webkit-border-radius: 5px 5px 5px 5px;
 	  -moz-border-radius: 5px 5px 5px 5px;
     position: relative;
@@ -98,7 +97,5 @@
   }
 
 .block{
-  width: 1000px;
-  height: 200px;
   border: solid black 1px;
 }
