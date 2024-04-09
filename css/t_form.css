@@ -1,4 +1,4 @@
-.button {
+.description {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -15,7 +15,7 @@
     cursor: pointer;
   }
   
-  .button:after {
+  .description:after {
     content: "";
     background: #f1f1f1;
     display: block;
@@ -28,7 +28,7 @@
     transition: all 0.8s;
   }
   
-  .button:active:after {
+  .description:active:after {
     padding: 0;
     margin: 0;
     opacity: 1;
@@ -98,4 +98,6 @@
 
 .block{
   border: solid black 1px;
+  background-color: #5151517d;
 }
+

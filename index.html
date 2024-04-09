@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оптимизация погрузки</title>
     <link rel="stylesheet"  href="/css/t_form.css">
+    <link rel="stylesheet"  href="/css/modal.css">
     <script src="t_form.js"></script>
+    
 </head>
 <body>
     <header>
-        <input type="button" class="button" id="description" value="Описание">
+        <!--Триггер модального окна-->
+        <button class="description" id="description">Описание</button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <span class="close" id="close">&times;</span>
+                <h2>Описание приложения</h2>
+            </div>
+            <div class="modal-body">
+                <p>Веб-приложение позволяет пользователям рассчитать положение груза.
+                    <br>После введения параметров грузового отсека и габаритов груза пользователю
+                    <br>будет представлена визуализация с интерактивным перемещением груза.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <h3>Разработано для выпускной квалификационной работы</h3>
+            </div>
+        </div>
+        <script src="modal.js"></script>
     </header>
     <main>
         <!--Создаем форму для параметров грузового отсека-->

@@ -1,0 +1,29 @@
+.modal{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 20px 40px;/* Location of the box */
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: aliceblue;
+    border: solid black 1px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    width: max-content; /* Full width */
+    height: max-content; /* Full height */
+    overflow: auto; 
+}
+
+.modal-animation {     animation-name: animatetop;
+    animation-duration: 0.8s
+}
+@keyframes animatetop {
+    from {top: 0px; opacity:0}
+    to {top: 200px; opacity:1}
+}
+
+.close{
+    float: right;
+    cursor: pointer;
+    padding: 0px 0px 10px 10px;
+}
