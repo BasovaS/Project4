@@ -32,8 +32,6 @@
         <script src="modal.js"></script>
     </header>
     <main>
-        <table><tr>
-        <td>
         <!--Создаем форму для параметров грузового отсека-->
         <form class="g_form" name="g_form" id="g_form" action="/t_form.js" method="post">
             <fieldset><legend>Введите габариты грузового отсека</legend>
@@ -56,37 +54,35 @@
                         </td> 
                     </tr>
                 </table>
-           <br><button type="submit" id="g_create" class="g_create" onclick="CreateIm('block')">Создать</button>
+            <br><button type="submit" id="g_create" class="g_create" onclick="CreateIm('block')">Создать</button>
             </fieldset>
         </form>
-        </td>
-        <td>
-            <form class="c_form" name="c_form" id="c_form" action="" method="post">
-                <fieldset><legend>Введите параметры груза</legend>
-                    <table>
-                    <tr>
-                        <td>
-                            <label for="c_lenght">Длина</label>
-                            <input type="number" class="c_param" id="c_lenght" name="c_lenght">
 
-                            <br><label for="g_width">Ширина</label>
-                            <input type="number" class="c_param" id="c_width" name="c_width">
+        <script src="c_form.js"></script>
+        <form class="c_form" id="c_form" action="" method="post">
+            <fieldset><legend>Введите параметры груза</legend>
+                <table><tr>
+                    <td>
+                        <label for="c_lenght">Длина</label>
+                        <input type="number" class="c_param" id="c_lenght" name="c_lenght">
 
-                            <br><label for="g_height">Высота</label>
-                            <input type="number" class="c_param" id="c_height">
-                        </td>
-                        <td>
-                            <input type="button" class="cargo" onclick="" value="1000*200*10">
-                            <br><input type="button" class="cargp" onclick="" value="100*200*10">
-                            <br><input type="button" class="cargo" onclick="" value="1000*20*10">
-                        </td> 
-                    </tr>
-                </table>
+                        <br><label for="g_width">Ширина</label>
+                        <input type="number" class="c_param" id="c_width" name="c_width">
+
+                        <br><label for="g_height">Высота</label>
+                        <input type="number" class="c_param" id="c_height">
+                    </td>
+                    <td>
+                        <input type="button" class="cargo" id="cargo" onclick="c_func1()" value="20*50*20">
+                        <br><input type="button" class="cargo" id="cargo" onclick="c_func2()" value="50*70*50">
+                        <br><input type="button" class="cargo" id="cargo" onclick="c_func3()" value="100*50*50">
+                    </td> 
+                </tr></table>
+                <button type="submit" id="c_create" class="c_create" onclick="CreateCargo('c_block')">Добавить</button>
             </fieldset>
             </form>
-        </td>
-        </tr></table>
         <div class="block" id="block" style="display: none; width: auto; height: auto;"></div>
+        <div class="c_block" id="c_block" style="display: none; width: auto; height: auto;"></div>
     </main>
 </body>
 </html>
