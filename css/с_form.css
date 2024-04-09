@@ -1,0 +1,40 @@
+.c_form{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width:max-content;
+    font: 1.2em sans-serif;
+    color: #ffffff;
+    padding: 10px;    
+  }
+  .c_form fieldset{
+    border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #599269;
+	padding: 20px;
+	background: #7f958d;
+ }
+ .c_form fieldset legend{
+    color: #ffffff;
+    padding: 10px;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	background:#7f958d;
+  }
+  .c_param{
+    width: 40px;
+    margin: 10px;
+    -webkit-border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px; 
+    -moz-appearance: textfield;
+  }
+  .c_param::-webkit-inner-spin-button{
+    display: none;
+  }
